@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo en clase</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <h3>Registro</h3>
+    <input type="text" name="name" id="txtnombre" placeholder="Ingrese su nombre: " onchange="names()">
+    <div>
+        <h5>Seleccione su edad: </h5>
+        <form>
+            <input type="radio" name="rd" id="r1" value="3-12 años" onclick="radbut()">3-12 años <br>
+            <input type="radio" name="rd" id="r2" value="12-18 años" onclick="radbut()">12-18 años <br>
+            <input type="radio" name="rd" id="r3" value="+18 años" onclick="radbut()">+18 años <br>
+        </form>
+    </div>
+    <div>
+        <h5>Elija sus servicios de entretenimiento: </h5>
+        <input type="checkbox" id="cb1" value="Netflix" onclick="cbx()">Netflix <br>
+        <input type="checkbox" id="cb2" value="Amazon Prime" onclick="cbx()">Amazon Prime <br>
+        <input type="checkbox" id="cb3" value="Youtube" onclick="cbx()">Youtube <br>
+        <input type="checkbox" id="cb4" value="otros" onclick="cbx()">otros <br>
+
+    </div>
+    <div>
+        <h5>Elija su region</h5>
+        <select name="Region" id="rg" onchange="opt()">
+            <option value="Costa">Costa</option>
+            <option value="Sierra">Sierra</option>
+            <option value="Amazonia">Amazonia</option>
+            <option value="Insular">Insular</option>
+        </select>
+    </div>
+    <div id="contenedor">
+        <div id="respn"></div>
+        <div id="resprb"></div>
+        <div id="respbc"></div>
+        <div id="respop"></div>
+    </div>
+
+</body>
+<footer>
+    <!--JS-->
+    <script src="assets/js/metodos.js"></script>
+</footer>
+
+</html>
